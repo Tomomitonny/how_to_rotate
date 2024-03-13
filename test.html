@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Rotator</title>
+  <style>
+    .image-container {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      cursor: pointer; /* カーソルをポインターに変更してクリック可能にする */
+    }
+    .handle {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="img/1.png" alt="Image 1" onclick="rotateImage(this)">
+  </div>
+  <div class="image-container">
+    <img src="img/2.png" alt="Image 2" onclick="rotateImage(this)">
+  </div>
+<div id="container">
+  <div class="image-container">
+      <img src="img/3.png" alt="Image 3" onclick="rotateImage(this)">
+    </div>
+    <div id="handle" class="handle"></div>
+
+</div>
+
+
+  <script src="js/test.js"></script>
+</body>
+</html>
